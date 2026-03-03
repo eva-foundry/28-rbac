@@ -1,0 +1,537 @@
+{
+  "schema": "eva.veritas-plan.v1",
+  "generated_at": "2026-02-25T11:55:54.491Z",
+  "generated_from": [
+    "PLAN.md"
+  ],
+  "format_detected": "veritas",
+  "prefix": "F28",
+  "features": [
+    {
+      "id": "F28-01",
+      "title": "?? Documentation Suite",
+      "source_heading": "## Feature: ?? Documentation Suite [ID=F28-01]",
+      "stories": []
+    },
+    {
+      "id": "F28-02",
+      "title": "Executive Summary",
+      "source_heading": "## Feature: Executive Summary [ID=F28-02]",
+      "stories": []
+    },
+    {
+      "id": "F28-03",
+      "title": "Table of Contents",
+      "source_heading": "## Feature: Table of Contents [ID=F28-03]",
+      "stories": []
+    },
+    {
+      "id": "F28-04",
+      "title": "Architecture Overview",
+      "source_heading": "## Feature: Architecture Overview [ID=F28-04]",
+      "stories": [
+        {
+          "id": "F28-04-001",
+          "title": "3-Layer RBAC Model",
+          "feature_id": "F28-04",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-05",
+      "title": "Authorization Flow",
+      "source_heading": "## Feature: Authorization Flow [ID=F28-05]",
+      "stories": [
+        {
+          "id": "F28-05-001",
+          "title": "Visual Flow Diagram",
+          "feature_id": "F28-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-05-002",
+          "title": "by-Step Process",
+          "feature_id": "F28-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-05-003",
+          "title": "Permission Matrix by Role",
+          "feature_id": "F28-05",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-06",
+      "title": "Group Structure",
+      "source_heading": "## Feature: Group Structure [ID=F28-06]",
+      "stories": [
+        {
+          "id": "F28-06-001",
+          "title": "Naming Convention (CRITICAL)",
+          "feature_id": "F28-06",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-07",
+      "title": "Cosmos DB Schema",
+      "source_heading": "## Feature: Cosmos DB Schema [ID=F28-07]",
+      "stories": [
+        {
+          "id": "F28-07-001",
+          "title": "Complete Database Architecture",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-002",
+          "title": "Database 1: Group-to-Resource Mapping",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-003",
+          "title": "Item Schema",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-004",
+          "title": "Field Descriptions",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-005",
+          "title": "Database 2: User Profile Management",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-006",
+          "title": "Database 3: Document Status Tracking",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-007",
+          "title": "Database 4: Custom Example Prompts",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-008",
+          "title": "Database 5: Conversation History",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-009",
+          "title": "Field Descriptions",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-07-010",
+          "title": "Azure RBAC Roles Reference",
+          "feature_id": "F28-07",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-08",
+      "title": "Data Flow Diagrams",
+      "source_heading": "## Feature: Data Flow Diagrams [ID=F28-08]",
+      "stories": [
+        {
+          "id": "F28-08-001",
+          "title": "1. User Login & Group Selection Flow",
+          "feature_id": "F28-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-08-002",
+          "title": "2. Document Upload & Processing Flow",
+          "feature_id": "F28-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-08-003",
+          "title": "3. Chat Request with RAG Flow",
+          "feature_id": "F28-08",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-09",
+      "title": "Implementation Details",
+      "source_heading": "## Feature: Implementation Details [ID=F28-09]",
+      "stories": [
+        {
+          "id": "F28-09-001",
+          "title": "Core Files",
+          "feature_id": "F28-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-09-002",
+          "title": "Code Examples",
+          "feature_id": "F28-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-09-003",
+          "title": "API Endpoint Integration Pattern",
+          "feature_id": "F28-09",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-10",
+      "title": "Multi-Environment Setup",
+      "source_heading": "## Feature: Multi-Environment Setup [ID=F28-10]",
+      "stories": [
+        {
+          "id": "F28-10-001",
+          "title": "Environment Architecture Diagram",
+          "feature_id": "F28-10",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-10-002",
+          "title": "Environment Configurations",
+          "feature_id": "F28-10",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-10-003",
+          "title": "Environment Switching",
+          "feature_id": "F28-10",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-11",
+      "title": "Debugging & Troubleshooting",
+      "source_heading": "## Feature: Debugging & Troubleshooting [ID=F28-11]",
+      "stories": [
+        {
+          "id": "F28-11-001",
+          "title": "Common Issues",
+          "feature_id": "F28-11",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F28-11-001-T01",
+              "title": "Issue 1: \"You are not assigned to any project\"",
+              "story_id": "F28-11-001",
+              "feature_id": "F28-11",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-11-001-T02",
+              "title": "Issue 2: Cosmos DB RBAC Permissions",
+              "story_id": "F28-11-001",
+              "feature_id": "F28-11",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-11-001-T03",
+              "title": "Issue 3: Mock Groups Not Working (LOCAL_DEBUG)",
+              "story_id": "F28-11-001",
+              "feature_id": "F28-11",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F28-11-002",
+          "title": "Fallback Mechanism Flow Diagram",
+          "feature_id": "F28-11",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-12",
+      "title": "Known Issues & Fixes",
+      "source_heading": "## Feature: Known Issues & Fixes [ID=F28-12]",
+      "stories": [
+        {
+          "id": "F28-12-001",
+          "title": "Fix 1: JWT Group Extraction Bug (February 4, 2026)",
+          "feature_id": "F28-12",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-12-002",
+          "title": "Fix 2: LOCAL_DEBUG Mock Groups (February 4, 2026)",
+          "feature_id": "F28-12",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-12-003",
+          "title": "Fix 3: Lifespan Mock Groups (Already Present)",
+          "feature_id": "F28-12",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-13",
+      "title": "API Endpoints",
+      "source_heading": "## Feature: API Endpoints [ID=F28-13]",
+      "stories": [
+        {
+          "id": "F28-13-001",
+          "title": "GET /getUsrGroupInfo",
+          "feature_id": "F28-13",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-13-002",
+          "title": "POST /updateUsrGroupInfo",
+          "feature_id": "F28-13",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-14",
+      "title": "Configuration Reference",
+      "source_heading": "## Feature: Configuration Reference [ID=F28-14]",
+      "stories": [
+        {
+          "id": "F28-14-001",
+          "title": "Environment Variables",
+          "feature_id": "F28-14",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-14-002",
+          "title": "Azure AD App Registration",
+          "feature_id": "F28-14",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-15",
+      "title": "Custom Example Prompts Per Group",
+      "source_heading": "## Feature: Custom Example Prompts Per Group [ID=F28-15]",
+      "stories": [
+        {
+          "id": "F28-15-001",
+          "title": "Configuration Location",
+          "feature_id": "F28-15",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-15-002",
+          "title": "Schema",
+          "feature_id": "F28-15",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-15-003",
+          "title": "Updating Examples",
+          "feature_id": "F28-15",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-16",
+      "title": "Testing & Validation",
+      "source_heading": "## Feature: Testing & Validation [ID=F28-16]",
+      "stories": [
+        {
+          "id": "F28-16-001",
+          "title": "Test Script",
+          "feature_id": "F28-16",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-16-002",
+          "title": "Manual Testing Checklist",
+          "feature_id": "F28-16",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F28-16-002-T01",
+              "title": "User can log in via Azure AD",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T02",
+              "title": "User sees their assigned groups in UI",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T03",
+              "title": "User can select a group from dropdown",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T04",
+              "title": "User can upload documents (Admin/Contributor only)",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T05",
+              "title": "User can search documents in their authorized index",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T06",
+              "title": "User sees custom example prompts for their group",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T07",
+              "title": "Authorization persists across browser sessions",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F28-16-002-T08",
+              "title": "Multi-group users see correct role precedence",
+              "story_id": "F28-16-002",
+              "feature_id": "F28-16",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F28-17",
+      "title": "Related Documentation",
+      "source_heading": "## Feature: Related Documentation [ID=F28-17]",
+      "stories": [
+        {
+          "id": "F28-17-001",
+          "title": "Primary References",
+          "feature_id": "F28-17",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-17-002",
+          "title": "Code References",
+          "feature_id": "F28-17",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-17-003",
+          "title": "Debug Sessions",
+          "feature_id": "F28-17",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-18",
+      "title": "FAQ",
+      "source_heading": "## Feature: FAQ [ID=F28-18]",
+      "stories": []
+    },
+    {
+      "id": "F28-19",
+      "title": "Related Documentation",
+      "source_heading": "## Feature: Related Documentation [ID=F28-19]",
+      "stories": [
+        {
+          "id": "F28-19-001",
+          "title": "Complete Documentation Suite",
+          "feature_id": "F28-19",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F28-19-002",
+          "title": "Key Documentation Features",
+          "feature_id": "F28-19",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F28-20",
+      "title": "Change Log",
+      "source_heading": "## Feature: Change Log [ID=F28-20]",
+      "stories": []
+    }
+  ]
+}
