@@ -1,0 +1,17 @@
+{
+  "steps": [
+    "copilot-instructions:SKIP",
+    "PLAN.md:SKIP",
+    "STATUS.md:SKIP",
+    "ACCEPTANCE.md:SKIP",
+    "README.md:CHECKED",
+    "PROJECT-ORGANIZATION.md:CREATED",
+    "API-SYNC:EXISTS"
+  ],
+  "before_version": "3.0.0",
+  "dry_run": false,
+  "project": "28-rbac",
+  "after_version": "3.0.0",
+  "copilot_step": "copilot-instructions:SKIP",
+  "timestamp": "2026-03-15T02:25:27+00:00"
+}

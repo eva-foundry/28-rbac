@@ -1,5 +1,26 @@
 # EVA RBAC (Role-Based Access Control) - Complete Reference
 
+<!-- eva-primed -->
+<!-- foundation-primer: 2026-03-03 by agent:copilot -->
+
+## EVA Ecosystem Integration
+
+| Tool | Purpose | How to Use |
+|------|---------|------------|
+| 37-data-model | Single source of truth for all project entities | GET http://localhost:8010/model/projects/28-rbac |
+| 29-foundry | Agentic capabilities (search, RAG, eval, observability) | C:\eva-foundry\eva-foundation\29-foundry |
+| 48-eva-veritas | Trust score and coverage audit | MCP tool: audit_repo / get_trust_score |
+| 07-foundation-layer | Copilot instructions primer + governance templates | MCP tool: apply_primer / audit_project |
+
+**Agent rule**: Query the data model API before reading source files.
+```powershell
+Invoke-RestMethod "http://localhost:8010/model/agent-guide"   # complete protocol
+Invoke-RestMethod "http://localhost:8010/model/agent-summary" # all layer counts
+```
+
+---
+
+
 **Created**: 2026-02-04  
 **Scope**: EVA-JP-v1.2 Production RBAC System  
 **Status**: Production-Ready with Multi-Environment Support  
@@ -7,7 +28,7 @@
 
 ---
 
-## 📚 Documentation Suite
+## ?? Documentation Suite
 
 This is the **technical reference** for EVA's RBAC system. For practical guides, see:
 
@@ -25,33 +46,33 @@ This is the **technical reference** for EVA's RBAC system. For practical guides,
 EVA's RBAC system provides **document-level access control** through Azure AD group membership, mapping user groups to specific blob containers, vector indexes, and storage roles. Implemented across three environments (sandbox, dev2, hccld2) with comprehensive debugging and fallback mechanisms.
 
 **Key Capabilities**:
-- ✅ Azure AD SSO integration with JWT group claims
-- ✅ Cosmos DB group-to-resource mapping
-- ✅ Document-level access control (upload, read, search)
-- ✅ Multi-role support (Admin, Contributor, Reader)
-- ✅ Custom example prompts per group
-- ✅ Fallback mechanisms for local development
+- ? Azure AD SSO integration with JWT group claims
+- ? Cosmos DB group-to-resource mapping
+- ? Document-level access control (upload, read, search)
+- ? Multi-role support (Admin, Contributor, Reader)
+- ? Custom example prompts per group
+- ? Fallback mechanisms for local development
 
 **Visual Enhancements**: This documentation includes 13 Mermaid diagrams for improved clarity:
-1. 🏗️ **3-Layer Architecture** - Complete system overview with color-coded components
-2. 🔄 **Authorization Flow Sequence** - Step-by-step authentication and authorization
-3. 🔍 **JWT Extraction Flowchart** - Critical filter logic with Feb 4, 2026 fix
-4. 🎯 **Role Selection Decision Tree** - Multi-group handling and priority logic
-5. 📊 **Complete Data Model ER Diagram** - All 5 databases with relationships
-6. ⏱️ **Cache Strategy Timeline** - Performance optimization with 30s TTL
-7. 🔌 **API Endpoint Sequence** - Complete request/response flow with caching
-8. 🛡️ **Fallback Mechanism States** - 3-layer resilience system
-9. 🌐 **Multi-Environment Architecture** - Development, staging, and production setup
-10. 👤 **User Login & Group Selection Flow** - Complete user onboarding sequence
-11. 📄 **Document Upload & Processing** - End-to-end document pipeline
-12. 💬 **Chat Request with RAG** - Complete retrieval-augmented generation flow
-13. 🔐 **Document Access Authorization** - Permission checking and audit logging
+1. ??? **3-Layer Architecture** - Complete system overview with color-coded components
+2. ?? **Authorization Flow Sequence** - Step-by-step authentication and authorization
+3. ?? **JWT Extraction Flowchart** - Critical filter logic with Feb 4, 2026 fix
+4. ?? **Role Selection Decision Tree** - Multi-group handling and priority logic
+5. ?? **Complete Data Model ER Diagram** - All 5 databases with relationships
+6. ?? **Cache Strategy Timeline** - Performance optimization with 30s TTL
+7. ?? **API Endpoint Sequence** - Complete request/response flow with caching
+8. ??? **Fallback Mechanism States** - 3-layer resilience system
+9. ?? **Multi-Environment Architecture** - Development, staging, and production setup
+10. ?? **User Login & Group Selection Flow** - Complete user onboarding sequence
+11. ?? **Document Upload & Processing** - End-to-end document pipeline
+12. ?? **Chat Request with RAG** - Complete retrieval-augmented generation flow
+13. ?? **Document Access Authorization** - Permission checking and audit logging
 
 ---
 
 ## Table of Contents
 
-**📊 Visual Diagrams Quick Reference**:
+**?? Visual Diagrams Quick Reference**:
 - [3-Layer Architecture](#3-layer-rbac-model) - System overview
 - [Authorization Flow Sequence](#visual-flow-diagram) - Request lifecycle
 - [JWT Extraction Flowchart](#2-jwt-token-decoding-backend) - Token processing
@@ -66,7 +87,7 @@ EVA's RBAC system provides **document-level access control** through Azure AD gr
 - [Document Upload Pipeline](#2-document-upload--processing-flow) - Processing workflow
 - [Chat with RAG](#3-chat-request-with-rag-flow) - Complete RAG flow
 
-**📖 Documentation Sections**:
+**?? Documentation Sections**:
 1. [Architecture Overview](#architecture-overview)
 2. [Authorization Flow](#authorization-flow)
 3. [Group Structure](#group-structure)
@@ -86,20 +107,20 @@ EVA's RBAC system provides **document-level access control** through Azure AD gr
 
 ```mermaid
 flowchart TB
-    subgraph Browser["👤 User (Browser)"]
-        JWT["JWT Token with Group Claims<br/>typ='groups' values:<br/>• 9f540c2e-...<br/>• a6410dd0-...<br/>• 3fece663-..."]
+    subgraph Browser["?? User (Browser)"]
+        JWT["JWT Token with Group Claims<br/>typ='groups' values:<br/>? 9f540c2e-...<br/>? a6410dd0-...<br/>? 3fece663-..."]
     end
     
-    subgraph Backend["🔧 Backend (FastAPI)"]
+    subgraph Backend["?? Backend (FastAPI)"]
         direction TB
         
         subgraph Layer1["Layer 1: JWT Extraction"]
             Decode["decode_x_ms_client_principal()<br/>utility_rbck.py:46-54"]
-            Extract["get_rbac_grplist_from_client_principle()<br/>utility_rbck.py:234-243<br/><br/>⚠️ FILTER: typ='groups' ONLY"]
+            Extract["get_rbac_grplist_from_client_principle()<br/>utility_rbck.py:234-243<br/><br/>?? FILTER: typ='groups' ONLY"]
         end
         
         subgraph Layer2["Layer 2: Authorization"]
-            Intersection["Group Intersection Check<br/>app.py:1207+<br/><br/>JWT groups ∩ Cosmos DB ∩ available_groups"]
+            Intersection["Group Intersection Check<br/>app.py:1207+<br/><br/>JWT groups ? Cosmos DB ? available_groups"]
             RoleSelect["Role Selection<br/>Admin > Contributor > Reader"]
         end
         
@@ -110,14 +131,14 @@ flowchart TB
         end
     end
     
-    subgraph CosmosDB["💾 Cosmos DB"]
+    subgraph CosmosDB["?? Cosmos DB"]
         Database[("groupsToResourcesMap<br/>Container: groupResourcesMapContainer")]
         Schema["{<br/>  group_id: '9f540c2e...',<br/>  group_name: 'AICoE_Admin_TestRBAC',<br/>  upload_storage: {...},<br/>  blob_access: {...},<br/>  vector_index_access: {...}<br/>}"]
     end
     
-    subgraph Resources["☁️ Azure Resources"]
-        BlobStorage["📦 Blob Storage<br/>Containers: upload, content"]
-        SearchIndex["🔍 Cognitive Search<br/>Indexes: testrbck, index-jurisprudence"]
+    subgraph Resources["?? Azure Resources"]
+        BlobStorage["?? Blob Storage<br/>Containers: upload, content"]
+        SearchIndex["?? Cognitive Search<br/>Indexes: testrbck, index-jurisprudence"]
     end
     
     JWT -->|X-MS-CLIENT-PRINCIPAL header| Decode
@@ -177,13 +198,13 @@ sequenceDiagram
     Browser->>Backend: API Request<br/>X-MS-CLIENT-PRINCIPAL: <JWT>
     Backend->>UtilityRBCK: decode_x_ms_client_principal()
     UtilityRBCK->>UtilityRBCK: Base64 decode JWT
-    UtilityRBCK->>UtilityRBCK: Filter claims by typ="groups"<br/>⚠️ CRITICAL FIX (Feb 4, 2026)
+    UtilityRBCK->>UtilityRBCK: Filter claims by typ="groups"<br/>?? CRITICAL FIX (Feb 4, 2026)
     UtilityRBCK-->>Backend: ['9f540c2e...', 'a6410dd0...', '3fece663...']
     
     Backend->>CosmosDB: Load group_items (cached)
     CosmosDB-->>Backend: [group mappings]
     
-    Backend->>Backend: Intersection:<br/>JWT ∩ Cosmos ∩ available_groups
+    Backend->>Backend: Intersection:<br/>JWT ? Cosmos ? available_groups
     
     alt No Groups Found
         Backend->>Backend: Check LOCAL_DEBUG=true?
@@ -205,7 +226,7 @@ sequenceDiagram
 
 **1. User Authentication (Azure AD SSO)**
 ```http
-Browser → Azure AD → App Service Easy Auth → Backend
+Browser ? Azure AD ? App Service Easy Auth ? Backend
 ```
 - User logs in via Azure AD
 - Easy Auth creates `AppServiceAuthSession` cookie
@@ -221,15 +242,15 @@ flowchart TD
     
     IterClaims --> CheckType{"claim.typ == 'groups'?"}
     
-    CheckType -->|"❌ NO<br/>(name, email, tid)"| Skip["Skip claim"]
-    CheckType -->|"✅ YES"| ExtractGUID["Extract claim.val<br/>(Group GUID)"]
+    CheckType -->|"? NO<br/>(name, email, tid)"| Skip["Skip claim"]
+    CheckType -->|"? YES"| ExtractGUID["Extract claim.val<br/>(Group GUID)"]
     
     Skip --> MoreClaims{"More claims?"}
     ExtractGUID --> AddToList["Add to user_groups[]"]
     AddToList --> MoreClaims
     
     MoreClaims -->|Yes| IterClaims
-    MoreClaims -->|No| Result(["Return user_groups<br/>['9f540c2e...', 'a6410dd0...', '3fece663...']<br/><br/>⚠️ Feb 4, 2026 Fix:<br/>BEFORE: Extracted ALL claims<br/>AFTER: Filter by typ='groups' ONLY"])
+    MoreClaims -->|No| Result(["Return user_groups<br/>['9f540c2e...', 'a6410dd0...', '3fece663...']<br/><br/>?? Feb 4, 2026 Fix:<br/>BEFORE: Extracted ALL claims<br/>AFTER: Filter by typ='groups' ONLY"])
     
     classDef critical fill:#ff6b6b,stroke:#c92a2a,color:#fff,stroke-width:3px
     classDef success fill:#51cf66,stroke:#2f9e44,color:#fff
@@ -336,14 +357,14 @@ flowchart TD
 
 | Operation | Admin | Contributor | Reader | Notes |
 |-----------|:-----:|:-----------:|:------:|-------|
-| **Upload Documents** | ✅ | ✅ | ❌ | app.py:1723-1724 |
-| **Read Documents** | ✅ | ✅ | ✅ | All roles have read access |
-| **Delete Documents** | ✅ | ❌ | ❌ | Requires "owner" in role (app.py:959) |
-| **Resubmit Documents** | ✅ | ❌ | ❌ | Owner permission check |
-| **Update Custom Examples** | ✅ | ❌ | ❌ | app.py:1649-1656 |
-| **Search Vector Index** | ✅ | ✅ | ✅ | All roles (read-only) |
-| **View Upload Status** | ✅ | ✅ | ❌ | Container-filtered results |
-| **Switch Groups** | ✅ | ✅ | ✅ | All users can change active group |
+| **Upload Documents** | ? | ? | ? | app.py:1723-1724 |
+| **Read Documents** | ? | ? | ? | All roles have read access |
+| **Delete Documents** | ? | ? | ? | Requires "owner" in role (app.py:959) |
+| **Resubmit Documents** | ? | ? | ? | Owner permission check |
+| **Update Custom Examples** | ? | ? | ? | app.py:1649-1656 |
+| **Search Vector Index** | ? | ? | ? | All roles (read-only) |
+| **View Upload Status** | ? | ? | ? | Container-filtered results |
+| **Switch Groups** | ? | ? | ? | All users can change active group |
 
 **Azure Role Mappings**:
 
@@ -562,7 +583,7 @@ erDiagram
 | `last_updated` | DateTime | Last preference update | Audit trail |
 
 **API Methods**:
-- `fetch_lastest_choice_of_group(principal_id)` → Returns `(current_group, current_group_id)`
+- `fetch_lastest_choice_of_group(principal_id)` ? Returns `(current_group, current_group_id)`
 - `write_current_adgroup(principal_id, current_group, current_group_id, user_groups, user_groups_ids)`
 
 ---
@@ -791,7 +812,7 @@ sequenceDiagram
     CosmosGroups-->>Backend: [All group mappings]
     
     Backend->>Backend: Extract JWT groups<br/>Filter by typ="groups"
-    Backend->>Backend: Intersection:<br/>JWT ∩ Cosmos ∩ available_groups
+    Backend->>Backend: Intersection:<br/>JWT ? Cosmos ? available_groups
     
     Backend->>CosmosProfile: fetch_lastest_choice_of_group(user_oid)
     CosmosProfile-->>Backend: (current_group, current_group_id)<br/>or (None, None)
@@ -1024,7 +1045,7 @@ sequenceDiagram
     
     rect rgb(230, 255, 230)
         Note over Endpoint: Step 3: Intersection Check
-        Endpoint->>Endpoint: JWT ∩ group_items ∩ available_groups
+        Endpoint->>Endpoint: JWT ? group_items ? available_groups
         
         alt No Matching Groups
             alt LOCAL_DEBUG=true
@@ -1081,31 +1102,31 @@ def find_upload_container_and_role(group_id, group_items):
 
 ```mermaid
 graph TB
-    subgraph Development["🔧 Development Environments"]
+    subgraph Development["?? Development Environments"]
         direction LR
         
         subgraph MarcoSandbox["Marco-Sandbox<br/>(Personal)"]
             MS_Cosmos[("marco-sandbox-cosmos<br/>Cosmos DB")]
             MS_OpenAI["gpt-4o<br/>OpenAI"]
-            MS_Access["✅ Public Access<br/>No VPN Required"]
+            MS_Access["? Public Access<br/>No VPN Required"]
         end
         
         subgraph Dev2["Dev2<br/>(Shared Development)"]
             D2_Cosmos[("infoasst-cosmos-dev2<br/>Cosmos DB")]
             D2_OpenAI["gpt-4.1-mini<br/>OpenAI"]
-            D2_Access["⚠️ Mixed Access<br/>VPN Recommended"]
+            D2_Access["?? Mixed Access<br/>VPN Recommended"]
         end
     end
     
-    subgraph Production["🚀 Production Environment"]
+    subgraph Production["?? Production Environment"]
         subgraph HCCLD2["HCCLD2<br/>(Secure Production)"]
             H2_Cosmos[("infoasst-cosmos-hccld2<br/>Cosmos DB")]
             H2_OpenAI["gpt-4o<br/>OpenAI"]
-            H2_Access["🔒 Private Endpoints<br/>VPN Required"]
+            H2_Access["?? Private Endpoints<br/>VPN Required"]
         end
     end
     
-    subgraph LocalDev["💻 Local Development"]
+    subgraph LocalDev["?? Local Development"]
         EnvFile["backend.env<br/>(Active Config)"]
         SwitchScript["Switch-Environment.ps1<br/>(Environment Switcher)"]
     end
@@ -1171,8 +1192,8 @@ LOCAL_DEBUG=true  # Fallback for local dev without Cosmos DB RBAC
 ```
 
 **What It Does**:
-1. Backs up current `backend.env` → `backend.env.backup-{timestamp}`
-2. Copies `backend.env.{environment}` → `backend.env`
+1. Backs up current `backend.env` ? `backend.env.backup-{timestamp}`
+2. Copies `backend.env.{environment}` ? `backend.env`
 3. Preserves fallback flags (`LOCAL_DEBUG`, `OPTIMIZED_KEYWORD_SEARCH_OPTIONAL`)
 4. Logs environment switch to console
 
@@ -1277,7 +1298,7 @@ stateDiagram-v2
     
     state AuthorizeRequest {
         [*] --> ExtractJWT: Decode X-MS-CLIENT-PRINCIPAL
-        ExtractJWT --> IntersectionCheck: JWT ∩ Cosmos ∩ available_groups
+        ExtractJWT --> IntersectionCheck: JWT ? Cosmos ? available_groups
         IntersectionCheck --> MatchFound: Groups matched
         IntersectionCheck --> NoMatch: Empty intersection
         
@@ -1468,14 +1489,14 @@ COSMOS_FILENAME_LEN=115  # Max filename length in Cosmos DB
 ### Azure AD App Registration
 
 **Token Configuration**:
-1. Navigate to Azure AD App Registration → Token configuration
+1. Navigate to Azure AD App Registration ? Token configuration
 2. Add groups claim
 3. Select token types: ID token + Access token
 4. Choose group types: Security groups
 5. Optional: Include group display names
 
 **Server-Side Token Storage**:
-1. Go to App Service → Authentication
+1. Go to App Service ? Authentication
 2. Enable "Token Store" (stores tokens securely on server)
 3. This prevents cookie size limitations for users in many groups
 
@@ -1512,8 +1533,8 @@ COSMOS_FILENAME_LEN=115  # Max filename length in Cosmos DB
 ### Updating Examples
 
 1. Login to Azure Portal
-2. Navigate to Storage Account → Containers → config
-3. Click `...` on `examplelist.json` → Edit
+2. Navigate to Storage Account ? Containers ? config
+3. Click `...` on `examplelist.json` ? Edit
 4. Modify `value` field for each question
 5. Click Save
 6. Restart Web App: `infoasst-web-{instance}`
@@ -1653,4 +1674,4 @@ This README provides the **technical reference** for EVA's RBAC architecture. Fo
 
 **For Support**: Marco Presta (marco.presta@hrsdc-rhdcc.gc.ca)  
 **Project**: EVA-JP-v1.2 Production RBAC System  
-**Status**: ✅ Production-Ready with 100% Validated Documentation
+**Status**: ? Production-Ready with 100% Validated Documentation

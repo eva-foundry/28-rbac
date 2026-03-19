@@ -1,0 +1,1767 @@
+{
+  "meta": {
+    "schema": "eva.export-to-model.v1",
+    "generated_at": "2026-03-08T01:25:43.560Z",
+    "project_id": "28-rbac",
+    "source_files": [
+      "STATUS.md",
+      "PLAN.md"
+    ],
+    "discovery_path": "C:\\eva-foundry\\eva-foundry\\28-rbac\\.eva\\discovery.json",
+    "reconciliation_path": "C:\\eva-foundry\\eva-foundry\\28-rbac\\.eva\\reconciliation.json",
+    "layers_selected": [
+      "wbs",
+      "evidence",
+      "decisions",
+      "risks"
+    ]
+  },
+  "wbs": [
+    {
+      "id": "WBS-28rbac",
+      "project_id": "28-rbac",
+      "parent_wbs_id": null,
+      "label": "Project: 28-rbac",
+      "level": "epic",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 129,
+      "points_done": 0,
+      "stories_total": 43,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F01",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "?? Documentation Suite",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F02",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Executive Summary",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F03",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Table of Contents",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F04",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Architecture Overview",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "stories_total": 1,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S001",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F04",
+      "label": "3-Layer RBAC Model",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-04-001"
+    },
+    {
+      "id": "WBS-F05",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Authorization Flow",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S002",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F05",
+      "label": "Visual Flow Diagram",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-05-001"
+    },
+    {
+      "id": "WBS-S003",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F05",
+      "label": "by-Step Process",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-05-002"
+    },
+    {
+      "id": "WBS-S004",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F05",
+      "label": "Permission Matrix by Role",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-05-003"
+    },
+    {
+      "id": "WBS-F06",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Group Structure",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "stories_total": 1,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S005",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F06",
+      "label": "Naming Convention (CRITICAL)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-06-001"
+    },
+    {
+      "id": "WBS-F07",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Cosmos DB Schema",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 30,
+      "points_done": 0,
+      "stories_total": 10,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S006",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Complete Database Architecture",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-001"
+    },
+    {
+      "id": "WBS-S007",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Database 1: Group-to-Resource Mapping",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-002"
+    },
+    {
+      "id": "WBS-S008",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Item Schema",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-003"
+    },
+    {
+      "id": "WBS-S009",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Field Descriptions",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-004"
+    },
+    {
+      "id": "WBS-S010",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Database 2: User Profile Management",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-005"
+    },
+    {
+      "id": "WBS-S011",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Database 3: Document Status Tracking",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-006"
+    },
+    {
+      "id": "WBS-S012",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Database 4: Custom Example Prompts",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-007"
+    },
+    {
+      "id": "WBS-S013",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Database 5: Conversation History",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-008"
+    },
+    {
+      "id": "WBS-S014",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Field Descriptions",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-009"
+    },
+    {
+      "id": "WBS-S015",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Azure RBAC Roles Reference",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-07-010"
+    },
+    {
+      "id": "WBS-F08",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Data Flow Diagrams",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S016",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F08",
+      "label": "1. User Login & Group Selection Flow",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-08-001"
+    },
+    {
+      "id": "WBS-S017",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F08",
+      "label": "2. Document Upload & Processing Flow",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-08-002"
+    },
+    {
+      "id": "WBS-S018",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F08",
+      "label": "3. Chat Request with RAG Flow",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-08-003"
+    },
+    {
+      "id": "WBS-F09",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Implementation Details",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S019",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Core Files",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-09-001"
+    },
+    {
+      "id": "WBS-S020",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Code Examples",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-09-002"
+    },
+    {
+      "id": "WBS-S021",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F09",
+      "label": "API Endpoint Integration Pattern",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-09-003"
+    },
+    {
+      "id": "WBS-F10",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Multi-Environment Setup",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S022",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F10",
+      "label": "Environment Architecture Diagram",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-10-001"
+    },
+    {
+      "id": "WBS-S023",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F10",
+      "label": "Environment Configurations",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-10-002"
+    },
+    {
+      "id": "WBS-S024",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F10",
+      "label": "Environment Switching",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-10-003"
+    },
+    {
+      "id": "WBS-F11",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Debugging & Troubleshooting",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S025",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F11",
+      "label": "Common Issues",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-11-001"
+    },
+    {
+      "id": "WBS-S026",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F11",
+      "label": "Fallback Mechanism Flow Diagram",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-11-002"
+    },
+    {
+      "id": "WBS-F12",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Known Issues & Fixes",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S027",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F12",
+      "label": "Fix 1: JWT Group Extraction Bug (February 4, 2026)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-12-001"
+    },
+    {
+      "id": "WBS-S028",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F12",
+      "label": "Fix 2: LOCAL_DEBUG Mock Groups (February 4, 2026)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-12-002"
+    },
+    {
+      "id": "WBS-S029",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F12",
+      "label": "Fix 3: Lifespan Mock Groups (Already Present)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-12-003"
+    },
+    {
+      "id": "WBS-F13",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "API Endpoints",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S030",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F13",
+      "label": "GET /getUsrGroupInfo",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-13-001"
+    },
+    {
+      "id": "WBS-S031",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F13",
+      "label": "POST /updateUsrGroupInfo",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-13-002"
+    },
+    {
+      "id": "WBS-F14",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Configuration Reference",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S032",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F14",
+      "label": "Environment Variables",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-14-001"
+    },
+    {
+      "id": "WBS-S033",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F14",
+      "label": "Azure AD App Registration",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-14-002"
+    },
+    {
+      "id": "WBS-F15",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Custom Example Prompts Per Group",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S034",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F15",
+      "label": "Configuration Location",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-15-001"
+    },
+    {
+      "id": "WBS-S035",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F15",
+      "label": "Schema",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-15-002"
+    },
+    {
+      "id": "WBS-S036",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F15",
+      "label": "Updating Examples",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-15-003"
+    },
+    {
+      "id": "WBS-F16",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Testing & Validation",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S037",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F16",
+      "label": "Test Script",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-16-001"
+    },
+    {
+      "id": "WBS-S038",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F16",
+      "label": "Manual Testing Checklist",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-16-002"
+    },
+    {
+      "id": "WBS-F17",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Related Documentation",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S039",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F17",
+      "label": "Primary References",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-17-001"
+    },
+    {
+      "id": "WBS-S040",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F17",
+      "label": "Code References",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-17-002"
+    },
+    {
+      "id": "WBS-S041",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F17",
+      "label": "Debug Sessions",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-17-003"
+    },
+    {
+      "id": "WBS-F18",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "FAQ",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F19",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Related Documentation",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S042",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F19",
+      "label": "Complete Documentation Suite",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-19-001"
+    },
+    {
+      "id": "WBS-S043",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-F19",
+      "label": "Key Documentation Features",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F28-19-002"
+    },
+    {
+      "id": "WBS-F20",
+      "project_id": "28-rbac",
+      "parent_wbs_id": "WBS-28rbac",
+      "label": "Change Log",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVD-28rbac-D3-001",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-04-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-002",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-05-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-003",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-05-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-004",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-05-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-005",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-06-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-006",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-007",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-008",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-009",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-004",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-010",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-005",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-011",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-006",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-012",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-007",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-013",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-008",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-014",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-009",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-015",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-07-010",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-016",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-08-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-017",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-08-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-018",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-08-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-019",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-09-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-020",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-09-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-021",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-09-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-022",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-10-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-023",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-10-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-024",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-10-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-025",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-11-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-026",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-11-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-027",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-12-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-028",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-12-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-029",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-12-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-030",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-13-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-031",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-13-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-032",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-14-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-033",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-14-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-034",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-15-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-035",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-15-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-036",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-15-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-037",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-16-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-038",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-16-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-039",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-17-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-040",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-17-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.563Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-041",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-17-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.564Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-042",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-19-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.564Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-28rbac-D3-043",
+      "project_id": "28-rbac",
+      "phase": "D3",
+      "story_id": "F28-19-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.564Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "manifest.yml",
+          "type": "config",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    }
+  ],
+  "decisions": [],
+  "risks": [],
+  "summary": {
+    "wbs_count": 64,
+    "evidence_count": 43,
+    "decisions_count": 0,
+    "risks_count": 0,
+    "mti_score": null
+  }
+}

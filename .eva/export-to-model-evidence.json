@@ -1,0 +1,23 @@
+{
+  "schema": "eva.export-to-model.evidence.v1",
+  "timestamp": "2026-03-08T01:25:43.582Z",
+  "project_id": "28-rbac",
+  "actor": "agent:veritas",
+  "action": "export-to-model",
+  "layers_exported": [
+    "wbs",
+    "evidence",
+    "decisions",
+    "risks"
+  ],
+  "record_counts": {
+    "wbs_count": 64,
+    "evidence_count": 43,
+    "decisions_count": 0,
+    "risks_count": 0,
+    "mti_score": null
+  },
+  "output_path": "C:\\eva-foundry\\eva-foundry\\28-rbac\\.eva\\model-export.json",
+  "discovery_path": "C:\\eva-foundry\\eva-foundry\\28-rbac\\.eva\\discovery.json",
+  "reconciliation_path": "C:\\eva-foundry\\eva-foundry\\28-rbac\\.eva\\reconciliation.json"
+}

@@ -58,5 +58,5 @@ triggers:
 
 ---
 
-*Template source*: `C:\AICOE\eva-foundation\07-foundation-layer`
-*Skill framework*: `C:\AICOE\eva-foundation\02-poc-agent-skills`
+*Template source*: `C:\eva-foundry\eva-foundation\07-foundation-layer`
+*Skill framework*: `C:\eva-foundry\eva-foundation\02-poc-agent-skills`
